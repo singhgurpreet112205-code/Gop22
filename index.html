@@ -114,7 +114,27 @@
     </div>
   </div>
 </div>
+  
+<script>
+  const yesBtn = document.getElementById("yesBtn");
+  const container = document.getElementById("container");
+  const successMsg = document.getElementById("successMsg");
+  const h1 = container.querySelector("h1");
+  const buttons = document.getElementById("buttons");
 
+  yesBtn.addEventListener("click", () => {
+    // Hide the H1 and buttons
+    h1.style.display = "none";
+    buttons.style.display = "none";
+
+    // Show the success message
+    successMsg.style.display = "block";
+  });
+
+  // Initially hide success message
+  successMsg.style.display = "none";
+</script>
+  
 <script>
   const noBtn = document.getElementById("noBtn");
   const yesBtn = document.getElementById("yesBtn");
@@ -157,5 +177,6 @@
 
 </body>
 </html>
+
 
 
